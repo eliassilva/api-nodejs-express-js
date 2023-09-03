@@ -1,0 +1,46 @@
+{
+  "name": "api-nodejs-express-js",
+  "version": "1.0.0",
+  "description": "api nodejs express with javascript boilerpate",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "dev": "cross-env NODE_ENV=development nodemon src/main.js",
+    "prettier": "npx prettier --write --ignore-unknown .",
+    "lint": "npx eslint . --ext .js,.jsx,.cjs,.mjs --fix",
+    "test": "cross-env NODE_ENV=test node src/main.js",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliassilva/api-nodejs-express-js.git"
+  },
+  "author": "eliassilva.me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliassilva/api-nodejs-express-js/issues"
+  },
+  "homepage": "https://github.com/eliassilva/api-nodejs-express-js#readme",
+  "keywords": [
+    "api",
+    "nodejs",
+    "express",
+    "javascript",
+    "boilerplate"
+  ],
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.48.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.3",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
+  }
+}
